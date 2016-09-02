@@ -9,6 +9,5 @@ var SQSRegion = os.Getenv("AWS_SQS_REGION")
 func main() {
 	mindSQL()
 	mindNsq()
-	mindInfluxDB()
 	mindSQS()
 }

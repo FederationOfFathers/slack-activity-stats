@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/apokalyptik/fof/lib/fof/stats"
+	fstat "github.com/FederationOfFathers/lib-fof-stats"
 	"github.com/nsqio/go-nsq"
 )
 

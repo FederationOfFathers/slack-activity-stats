@@ -54,7 +54,6 @@ func mindSQS() {
 						log.Println("error unmarshalling json:", err.Error())
 					}
 					log.Printf("Recieved message: %s/%s/%s/%s", m.Team, m.Channel, m.User, m.Timestamp)
-					infxMessage <- m
 					sqlMessage <- m
 					nsqMessage <- m
 					_, err := svc.DeleteMessage(&sqs.DeleteMessageInput{
